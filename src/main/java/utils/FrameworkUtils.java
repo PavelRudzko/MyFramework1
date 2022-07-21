@@ -43,6 +43,37 @@
 //    }
 //
 ////    Action (){};
-////    Wait(){}
+
+
+//import org.openqa.selenium.By;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.interactions.Actions;
 //
+//import java.time.Duration;
+//class My Action {
+//    WebDriver driver;
+//
+//    WebElement clickable = driver.findElement(By.id("clickable"));
+//
+//
+//   Actions (driver)
+//        .
+//
+//    moveToElement(clickable)
+//        .
+//
+//    pause(Duration.ofSeconds(1))
+//            .
+//
+//    clickAndHold()
+//        .
+//
+//    pause(Duration.ofSeconds(1))           .
+//
+//    sendKeys("abc")
+//        .
+//
+//    perform();
 //}
+////}
