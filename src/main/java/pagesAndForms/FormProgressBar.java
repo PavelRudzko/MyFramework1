@@ -1,10 +1,23 @@
 package pagesAndForms;
 
-import org.openqa.selenium.By;
+import elements.Button;
+import elements.Label;
+import org.openqa.selenium.WebDriver;
 
 public class FormProgressBar extends BaseForm{
 
-    public FormProgressBar(By locForm, String valForm) {
-        super(locForm, valForm);
+
+    //Label progressbar = //span[@class = "text"][text()='Progress Bar']
+   // Label progressbarElement = //div[@class = 'progress']
+    //Button startStopBtn = //button[@id='startStopButton']
+    public FormProgressBar() throws InterruptedException {
+        super();
     }
+
+    @Override
+    protected String getTargetUrl() {
+        return "https://demoqa.com/progress-bar";
+    }
+
+
 }

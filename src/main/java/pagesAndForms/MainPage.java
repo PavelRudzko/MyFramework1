@@ -1,20 +1,25 @@
 package pagesAndForms;
 
+
 import elements.Button;
-import elements.Label;
-import elements.TextBox;
 import org.openqa.selenium.By;
 
 public class MainPage extends BaseForm{
-
-    Label labelMainpage;
-    TextBox textBox;
-    Button button;
-
-    public MainPage(By locForm, String valForm) {
-        super(locForm, valForm);
+    public MainPage() throws InterruptedException {
+        super();
     }
+   public Button elementsBtn;
+    Button formsBtn;
+    public Button getAlertFrameWinBtn (){
+        return new Button("//*[contains(text(),'Elements')]//parent::div//parent::div//parent::div[contains(@class, 'top-card')]");
+    };
+    Button widgetBtn;
 
-    void mainPage(){};
 
+    @Override
+    protected String getTargetUrl() {
+        return "https://demoqa.com/";
+    }
 }
+
+

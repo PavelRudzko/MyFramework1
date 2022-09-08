@@ -2,16 +2,9 @@ package elements;
 
 import org.openqa.selenium.By;
 
-public class TextBox extends BaseElement {
-
-
-
-    public TextBox(By locator, String name) {
-        super(locator, name);
+public class TextBox extends BaseElements {
+    public TextBox (String locator) {
+        super(locator);
     }
-
-    void sendKey(String value){};
-
-    void clear(){};
 
 }
